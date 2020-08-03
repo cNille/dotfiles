@@ -11,6 +11,8 @@ is_installed "iterm" https://www.iterm2.com/downloads.html
 
 is_installed "mullvad" https://mullvad.net/sv/download
 
+is_installed "slack" https://slack.com/intl/en-se/help/articles/207677868-Download-Slack-for-Mac
+
 is_installed "dropbox" https://www.dropbox.com/downloading
 
 is_installed "karabiner" https://karabiner-elements.pqrs.org

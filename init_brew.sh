@@ -15,6 +15,7 @@ brew_install () {
 
 brew_install autojump
 brew_install zsh
+brew_install yarn
 brew_install fzf
 brew_install go
 

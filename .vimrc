@@ -77,6 +77,10 @@ let g:monokai_gui_italic = 1
 " ALE
 let g:ale_fixers = {'jsx': ['stylelint', 'eslint'], 'javascript': ['eslint', 'prettier']}
 let g:ale_linters = {'jsx': ['stylelint', 'eslint'], 'javascript': ['eslint']}
+
+let g:ale_fixers['typescript'] = ['prettier']
+let g:ale_fixers['typescript.tsx'] = ['prettier']
+
 let g:ale_fix_on_save = 1
 let g:ale_linter_aliases = {'jsx': 'css'}
 let g:ale_sign_error = '>>' " Less aggressive than the default '>>'

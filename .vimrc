@@ -41,6 +41,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'pangloss/vim-javascript'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'peitalin/vim-jsx-typescript'
+Plugin 'styled-components/vim-styled-components'
 Plugin 'crusoexia/vim-monokai'
 Plugin 'mxw/vim-jsx'
 Plugin 'udalov/kotlin-vim'
@@ -74,8 +75,8 @@ let g:monokai_term_italic = 1
 let g:monokai_gui_italic = 1
 
 " ALE
-let g:ale_fixers = {'jsx': ['stylelint', 'eslint'], 'tsx': ['stylelint', 'eslint', 'prettier'], 'javascript': ['eslint', 'prettier']}
-let g:ale_linters = {'jsx': ['stylelint', 'eslint'], 'tsx': ['stylelint', 'eslint', 'prettier'],  'javascript': ['eslint', 'prettier']}
+let g:ale_fixers = {'jsx': ['stylelint', 'eslint'], 'javascript': ['eslint', 'prettier']}
+let g:ale_linters = {'jsx': ['stylelint', 'eslint'], 'javascript': ['eslint']}
 let g:ale_fix_on_save = 1
 let g:ale_linter_aliases = {'jsx': 'css'}
 let g:ale_sign_error = '>>' " Less aggressive than the default '>>'

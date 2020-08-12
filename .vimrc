@@ -9,7 +9,7 @@ set ignorecase
 set smartcase
 
 " Highlight 80-mark
-highlight ColorColumn guibg=#aaa
+highlight ColorColumn guibg=#aaaaaa
 let &colorcolumn="80"
 
 " Tell vim where to find the tags.

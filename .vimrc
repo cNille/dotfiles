@@ -40,7 +40,8 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'pangloss/vim-javascript'
 Plugin 'leafgarland/typescript-vim'
-Plugin 'peitalin/vim-jsx-typescript'
+Plugin 'maxmellon/vim-jsx-pretty'
+Plugin 'neoclide/coc.nvim' , { 'branch' : 'release' }
 Plugin 'styled-components/vim-styled-components'
 Plugin 'crusoexia/vim-monokai'
 Plugin 'mxw/vim-jsx'
@@ -127,6 +128,9 @@ let g:NERDTreeNodeDelimiter = "\u00a0"
 set mouse=a
 map <ScrollWheelUp> <C-Y>
 map <ScrollWheelDown> <C-E>
+
+" Auto completing
+let g:coc_global_extensions = [ 'coc-tsserver' ]
 
 
 " Open files with FZF

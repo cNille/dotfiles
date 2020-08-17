@@ -3,6 +3,8 @@ EDITOR=vim
 # Ignores to add commands in history if tehy start with a space
 setopt HIST_IGNORE_SPACE
 
+alias vim="nvim"
+alias vi="nvim"
 alias !!!='!-2'
 alias ..='cd ..'
 alias ...='cd ../../'

@@ -32,7 +32,7 @@ Plugin 'scrooloose/nerdtree'
 " Plugin 'derekwyatt/vim-scala'
 " Plugin 'vim-ruby/vim-ruby'
 " Plugin 'vim-syntastic/syntastic'
-Plugin 'wincent/command-t'
+"  Plugin 'wincent/command-t'
 " Plugin 'w0rp/ale'
 " Plugin 'tpope/vim-fugitive'
 Plugin 'pangloss/vim-javascript'
@@ -163,6 +163,6 @@ endif
 "  map g/ <Plug>(incsearch-stay)
 
 " Force vim to scan highlighting from start of file to not get out of sync.
-autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
-autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
+" autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
+" autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
 

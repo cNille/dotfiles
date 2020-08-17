@@ -138,7 +138,8 @@ nmap <silent> gr <Plug>(coc-references)
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
 nnoremap <silent> <space>d :<C-u>CocList diagnostics<cr>
-nnoremap <silent> <space>s :<C-u>CocList -I symbols<cr>
+nnoremap <silent> <space>s :<C-u>CocList symbols<cr>
+nnoremap <silent> <space>o :<C-u>CocList outline<cr>
 if isdirectory('./node_modules') && isdirectory('./node_modules/prettier')
   let g:coc_global_extensions += ['coc-prettier']
 endif
@@ -157,9 +158,9 @@ if $VIM_CRONTAB == "true"
     set nowritebackup
 endif
 
-map /  <Plug>(incsearch-forward)
-map ?  <Plug>(incsearch-backward)
-map g/ <Plug>(incsearch-stay)
+"  map /  <Plug>(incsearch-forward)
+"  map ?  <Plug>(incsearch-backward)
+"  map g/ <Plug>(incsearch-stay)
 
 " Force vim to scan highlighting from start of file to not get out of sync.
 autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart

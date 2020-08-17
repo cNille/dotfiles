@@ -29,24 +29,24 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'ntpeters/vim-better-whitespace'
 " Plugin 'derekwyatt/vim-scala'
 " Plugin 'vim-ruby/vim-ruby'
 " Plugin 'vim-syntastic/syntastic'
-Plugin 'w0rp/ale'
-Plugin 'skywind3000/asyncrun.vim'
 Plugin 'wincent/command-t'
-Plugin 'editorconfig/editorconfig-vim'
-Plugin 'tpope/vim-fugitive'
+" Plugin 'w0rp/ale'
+" Plugin 'tpope/vim-fugitive'
 Plugin 'pangloss/vim-javascript'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'maxmellon/vim-jsx-pretty'
+" Plugin 'mxw/vim-jsx'
 Plugin 'neoclide/coc.nvim' , { 'branch' : 'release' }
-Plugin 'styled-components/vim-styled-components'
+" Plugin 'styled-components/vim-styled-components'
+" Plugin 'udalov/kotlin-vim'
 Plugin 'crusoexia/vim-monokai'
-Plugin 'mxw/vim-jsx'
-Plugin 'udalov/kotlin-vim'
-Plugin 'haya14busa/incsearch.vim'
+" Plugin 'haya14busa/incsearch.vim'
+" Plugin 'ntpeters/vim-better-whitespace'
+" Plugin 'skywind3000/asyncrun.vim'
+" Plugin 'editorconfig/editorconfig-vim'
 
 call vundle#end()
 " Vundle end
@@ -57,8 +57,8 @@ set number
 set paste
 
 " Whitespace autofix on save
-let g:better_whitespace_enabled=1
-let g:strip_whitespace_on_save=1
+" let g:better_whitespace_enabled=1
+" let g:strip_whitespace_on_save=1
 
 " Highlight current cursorline
 set cursorline
@@ -76,18 +76,18 @@ let g:monokai_term_italic = 1
 let g:monokai_gui_italic = 1
 
 " ALE
-let g:ale_fixers = {'jsx': ['stylelint', 'eslint'], 'javascript': ['eslint', 'prettier']}
-let g:ale_linters = {'jsx': ['stylelint', 'eslint'], 'javascript': ['eslint']}
-
-let g:ale_fixers['typescript'] = ['prettier']
-let g:ale_fixers['typescript.tsx'] = ['prettier']
-
-let g:ale_fix_on_save = 1
-let g:ale_linter_aliases = {'jsx': 'css'}
-let g:ale_sign_error = '>>' " Less aggressive than the default '>>'
-let g:ale_sign_warning = '.'
-" let g:ale_lint_on_enter = 0 " Less distracting when opening a new file
-let g:ale_lint_on_text_changed ='never'
+" let g:ale_fixers = {'jsx': ['stylelint', 'eslint'], 'javascript': ['eslint', 'prettier']}
+" let g:ale_linters = {'jsx': ['stylelint', 'eslint'], 'javascript': ['eslint']}
+"
+" let g:ale_fixers['typescript'] = ['prettier']
+" let g:ale_fixers['typescript.tsx'] = ['prettier']
+"
+" let g:ale_fix_on_save = 1
+" let g:ale_linter_aliases = {'jsx': 'css'}
+" let g:ale_sign_error = '>>' " Less aggressive than the default '>>'
+" let g:ale_sign_warning = '.'
+" " let g:ale_lint_on_enter = 0 " Less distracting when opening a new file
+" let g:ale_lint_on_text_changed ='never'
 
 " Prettier thingy
 autocmd BufWritePost *.js AsyncRun -post=checktime ./node_modules/.bin/eslint --fix %

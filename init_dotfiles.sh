@@ -27,3 +27,7 @@ create_dotfile () {
 create_dotfile ".vimrc"
 create_dotfile ".gitconfig"
 create_dotfile ".zshrc"
+
+mkdir -p ~/.config/nvim/
+mkdir -p .config/nvim/
+create_dotfile ".config/nvim/init.vim"

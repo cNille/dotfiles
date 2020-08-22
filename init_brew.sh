@@ -16,8 +16,10 @@ brew_install () {
 brew_install autojump
 brew_install zsh
 brew_install yarn
+brew_install fd
 brew_install fzf
 brew_install go
+brew_install neovim
 
 
 echo "Do you want to install gnupg? [y/n]"

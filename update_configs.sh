@@ -5,8 +5,10 @@
 # ===================================================
 
 cp .vimrc /tmp/.vimrc
-cp .zshrc /tmp/.zshrc
 cp .gitconfig /tmp/.gitconfig
+
+mkdir -p /tmp/.config/nvim/
+cp .zshrc /tmp/.zshrc
 
 # Fetch new changes from remote repository
 git pull
@@ -19,6 +21,7 @@ update_local () {
 }
 
 update_local .zshrc
+update_local .config/nvim/init.vim
 update_local .vimrc
 
 # Needs to be cleaned before added to git-history. Therefore different function.
@@ -46,6 +49,7 @@ cmp --silent /tmp/.gitconfig .gitconfig || (
 cp ~/.zshrc /tmp/.zshrc
 cp ~/.vimrc /tmp/.vimrc
 cp ~/.gitconfig /tmp/.gitconfig
+cp ~/.config/nvim/init.vim /tmp/.config/nvim/init.vim
 
 # Clean userdata from gitconfig
 sed -i '' '/\[user\]/d' /tmp/.gitconfig
@@ -64,6 +68,7 @@ update_remote () {
 }
 
 update_remote .zshrc
+update_remote .config/nvim/init.vim 
 update_remote .vimrc
 update_remote .gitconfig
 
@@ -71,3 +76,4 @@ update_remote .gitconfig
 rm /tmp/.gitconfig
 rm /tmp/.vimrc
 rm /tmp/.zshrc
+rm -rf /tmp/.config

@@ -14,6 +14,7 @@ alias xx='exit'
 alias livels='watch -n0,1 "ls -lrt ./ | tail "'
 alias sshhost='cat ~/.ssh/config  | grep "Host "'
 alias gs='git status '
+alias dev='git co new-mastery-model-develop'
 
 # Setting fd as the default source for fzf
 export FZF_DEFAULT_COMMAND='fd --type f'

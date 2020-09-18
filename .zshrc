@@ -32,10 +32,10 @@ export GOPATH=$HOME/go
 export PATH=$PATH:$(go env GOPATH)/bin
 export PATH=$PATH:$(go env GOPATH)/bin
 export PATH="/usr/local/opt/node@12/bin:$PATH"
+export PATH="/usr/local/opt/postgresql@11/bin:$PATH"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/nille/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/nille/Downloads/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/nille/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/nille/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
-export PATH="/usr/local/opt/postgresql@11/bin:$PATH"

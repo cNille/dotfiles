@@ -38,4 +38,4 @@
 [rebase]
 	instructionFormat = (%an <%ae>) %s
 [core]
-	ignorecase = false
+	ignorecase = true

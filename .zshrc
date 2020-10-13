@@ -42,3 +42,8 @@ if [ -f '/Users/nille/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/nille/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/nille/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+
+# Custom prompt
+# https://scriptingosx.com/2019/07/moving-to-zsh-06-customizing-the-zsh-prompt/
+PROMPT='%(?.%F{green}√.%F{red}?%?)%f %B%F{240}%1~%f%b %# '
